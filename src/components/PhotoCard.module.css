@@ -1,0 +1,37 @@
+.photoCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photoCard:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.photoCard img {
+  width: 450px;
+  height: "auto";
+  min-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .photoCard {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .photoCard img {
+    max-width: 300px;
+    height: "auto";
+  }
+
+  .photoCard:hover {
+    transform: none;
+    cursor: normal;
+  }
+}
