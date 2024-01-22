@@ -9,6 +9,8 @@ test("renders photo card component", () => {
   };
 
   render(<PhotoCard {...mockPhoto} />);
-  expect(screen.getByAltText("Photo by: John Doe")).toBeInTheDocument();
-  expect(screen.getByText("Author: John Doe")).toBeInTheDocument();
+  expect(
+    screen.getByAltText("Photo submitted by: John Doe")
+  ).toBeInTheDocument();
+  expect(screen.getByText("Submitted by: John Doe")).toBeInTheDocument();
 });

@@ -52,7 +52,7 @@ test("displays the correct number of photos", async () => {
     // Check if each photo is rendered
     for (let index = 1; index <= 16; index++) {
       expect(
-        screen.getByAltText(`Photo by: Author ${index}`)
+        screen.getByAltText(`Photo submitted by: Author ${index}`)
       ).toBeInTheDocument();
     }
   });
